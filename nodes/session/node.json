@@ -1,0 +1,26 @@
+{
+  "name": "session",
+  "ns": "passport",
+  "description": "Passport session",
+  "depends": [
+    "passport:session"
+  ],
+  "ports": {
+    "input": {
+      "title": "Passport",
+      "passport": {
+        "type": "function"
+      },
+      "app": {
+        "title": "Express App",
+        "type": "function"
+      }
+    },
+    "output": {
+      "event:complete": {
+        "title": "Complete",
+        "type": "object"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "use",
+  "ns": "passport",
+  "description": "Passport Use",
+  "keywords": ["passport", "use"],
+  "ports": {
+    "input": {
+      "title": "Passport",
+      "passport": {
+        "type": "function"
+      },
+      "strategy": {
+        "title": "Strategy",
+        "type": "object"
+      }
+    },
+    "output": {
+      "accessToken": {
+        "title": "Access Token",
+        "type": "string"
+      },
+      "refreshToken": {
+        "title": "Refresh Token",
+        "type": "string"
+      },
+      "profile": {
+        "title": "ProfileToken",
+        "type": "object"
+      },
+      "done": {
+        "title": "Done",
+        "type": "function"
+      }
+    }
+  }
+}

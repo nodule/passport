@@ -1,0 +1,26 @@
+{
+  "name": "initialize",
+  "ns": "passport",
+  "description": "Passport Initialize",
+  "depends": [
+    "passport:initialize"
+  ],
+  "ports": {
+    "input": {
+      "title": "Passport",
+      "passport": {
+        "type": "function"
+      },
+      "app": {
+        "title": "Express App",
+        "type": "function"
+      }
+    },
+    "output": {
+      "event:complete": {
+        "title": "Complete",
+        "type": "object"
+      }
+    }
+  }
+}
