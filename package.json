@@ -22,6 +22,7 @@
     "chit": "0.x.x"
   },
   "chix": {
-    "name": "passport"
+    "name": "passport",
+    "color": "rgb(27,50,223)"
   }
 }
