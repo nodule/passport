@@ -1,0 +1,175 @@
+{
+  "name": "passport",
+  "description": "Passport components for Chiχ",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/passport.git"
+  },
+  "dependencies": {
+    "passport": "0.x.x"
+  },
+  "nodes": [
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
+          },
+          "credentials": {
+            "title": "Credentials",
+            "type": "object",
+            "properties": {
+              "clientID": {
+                "title": "Client ID",
+                "type": "string"
+              },
+              "clientSecret": {
+                "title": "Client Secret",
+                "type": "password"
+              }
+            }
+          },
+          "callbackURL": {
+            "title": "Callback URL",
+            "type": "uri"
+          }
+        },
+        "output": {
+          "strategy": {
+            "title": "Strategy",
+            "type": "object"
+          }
+        }
+      },
+      "require": {
+        "passport-github": "0.x.x"
+      },
+      "keywords": [
+        "github",
+        "strategy"
+      ],
+      "description": "Github Strategy",
+      "ns": "passport",
+      "name": "github",
+      "fn": "output = {\n  strategy: new passportGithub.Strategy.GithubStrategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
+          },
+          "app": {
+            "title": "Express App",
+            "type": "function"
+          }
+        },
+        "output": {
+          "event:complete": {
+            "title": "Complete",
+            "type": "object"
+          }
+        }
+      },
+      "depends": [
+        "passport:initialize"
+      ],
+      "description": "Passport Initialize",
+      "ns": "passport",
+      "name": "initialize",
+      "fn": "output = [input.app, 'use', input.passport.initialize()]\n"
+    },
+    {
+      "ports": {
+        "input": {},
+        "output": {
+          "passport": {
+            "title": "Passport",
+            "type": "function"
+          }
+        }
+      },
+      "require": {
+        "passport": "0.x.x"
+      },
+      "keywords": [
+        "passport"
+      ],
+      "description": "Require Passport",
+      "ns": "passport",
+      "name": "passport",
+      "fn": "output = { passport: passport }\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
+          },
+          "app": {
+            "title": "Express App",
+            "type": "function"
+          }
+        },
+        "output": {
+          "event:complete": {
+            "title": "Complete",
+            "type": "object"
+          }
+        }
+      },
+      "depends": [
+        "passport:session"
+      ],
+      "description": "Passport session",
+      "ns": "passport",
+      "name": "session",
+      "fn": "output = [input.app, 'use', input.passport.session()]\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
+          },
+          "strategy": {
+            "title": "Strategy",
+            "type": "object"
+          }
+        },
+        "output": {
+          "accessToken": {
+            "title": "Access Token",
+            "type": "string"
+          },
+          "refreshToken": {
+            "title": "Refresh Token",
+            "type": "string"
+          },
+          "profile": {
+            "title": "ProfileToken",
+            "type": "object"
+          },
+          "done": {
+            "title": "Done",
+            "type": "function"
+          }
+        }
+      },
+      "keywords": [
+        "passport",
+        "use"
+      ],
+      "description": "Passport Use",
+      "ns": "passport",
+      "name": "use",
+      "fn": "output = [passport, 'use', input.strategy]\n"
+    }
+  ],
+  "twigs": []
+}

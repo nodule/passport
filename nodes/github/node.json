@@ -3,9 +3,9 @@
   "ns": "passport",
   "description": "Github Strategy",
   "keywords": ["github", "strategy"],
-  "require": [
+  "require": {
     "passport-github": "0.x.x"
-  ],
+  },
   "ports": {
     "input": {
       "title": "Passport",

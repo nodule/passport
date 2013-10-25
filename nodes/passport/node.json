@@ -1,0 +1,19 @@
+{
+  "name": "passport",
+  "ns": "passport",
+  "description": "Require Passport",
+  "keywords": ["passport"],
+  "require": {
+    "passport": "0.x.x"
+  },
+  "ports": {
+    "input": {
+    },
+    "output": {
+      "passport": {
+        "title": "Passport",
+        "type": "function"
+      }
+    }
+  }
+}
