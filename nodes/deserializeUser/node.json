@@ -1,0 +1,24 @@
+{
+  "name": "deserializeUser",
+  "ns": "passport",
+  "description": "Passport deserializeUser",
+  "keywords": ["passport"],
+  "ports": {
+    "input": {
+      "title": "Passport",
+      "passport": {
+        "type": "function"
+      }
+    },
+    "output": {
+      "user": {
+        "title": "id",
+        "type": "string"
+      },
+      "done": {
+        "title": "Done",
+        "type": "function"
+      }
+    }
+  }
+}

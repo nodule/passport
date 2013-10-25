@@ -16,6 +16,33 @@
           "title": "Passport",
           "passport": {
             "type": "function"
+          }
+        },
+        "output": {
+          "user": {
+            "title": "id",
+            "type": "string"
+          },
+          "done": {
+            "title": "Done",
+            "type": "function"
+          }
+        }
+      },
+      "keywords": [
+        "passport"
+      ],
+      "description": "Passport deserializeUser",
+      "ns": "passport",
+      "name": "deserializeUser",
+      "fn": "output = [passport, 'deserializeUser']\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
           },
           "credentials": {
             "title": "Credentials",
@@ -102,6 +129,33 @@
       "ns": "passport",
       "name": "passport",
       "fn": "output = { passport: passport }\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
+          }
+        },
+        "output": {
+          "user": {
+            "title": "User",
+            "type": "object"
+          },
+          "done": {
+            "title": "Done",
+            "type": "function"
+          }
+        }
+      },
+      "keywords": [
+        "passport"
+      ],
+      "description": "Passport serializeUser",
+      "ns": "passport",
+      "name": "serializeUser",
+      "fn": "output = [passport, 'serializeUser']\n"
     },
     {
       "ports": {
