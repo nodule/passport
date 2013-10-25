@@ -1,0 +1,42 @@
+{
+  "name": "facebook",
+  "ns": "passport",
+  "description": "Facebook Strategy",
+  "keywords": ["facebook", "strategy"],
+  "require": {
+    "passport-facebook": "1.x.x"
+  },
+  "ports": {
+    "input": {
+      "title": "Passport",
+      "passport": {
+        "type": "function"
+      },
+      "credentials": {
+         "title": "Credentials",
+         "type": "object",
+         "properties": {
+           "clientID": {
+             "title": "Facebook App Id",
+             "type": "string"
+           },
+           "clientSecret": {
+             "title": "Facebook App Secret",
+             "type": "password"
+           }
+         }
+      
+      },
+      "callbackURL": {
+        "title": "Callback URL",
+        "type": "uri"
+      }
+    },
+    "output": {
+      "strategy": {
+        "title": "Strategy",
+        "type": "object"
+      }
+    }
+  }
+}

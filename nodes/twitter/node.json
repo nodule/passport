@@ -1,0 +1,42 @@
+{
+  "name": "twitter",
+  "ns": "passport",
+  "description": "Twitter Strategy",
+  "keywords": ["twitter", "strategy"],
+  "require": {
+    "passport-twitter": "1.x.x"
+  },
+  "ports": {
+    "input": {
+      "title": "Passport",
+      "passport": {
+        "type": "function"
+      },
+      "credentials": {
+         "title": "Credentials",
+         "type": "object",
+         "properties": {
+           "consumerKey": {
+             "title": "Twitter Consumer Key",
+             "type": "string"
+           },
+           "consumerSecret": {
+             "title": "Twitter Consumer Secret",
+             "type": "password"
+           }
+         }
+      
+      },
+      "callbackURL": {
+        "title": "Callback URL",
+        "type": "uri"
+      }
+    },
+    "output": {
+      "strategy": {
+        "title": "Strategy",
+        "type": "object"
+      }
+    }
+  }
+}

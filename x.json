@@ -92,6 +92,51 @@
             "type": "object",
             "properties": {
               "clientID": {
+                "title": "Facebook App Id",
+                "type": "string"
+              },
+              "clientSecret": {
+                "title": "Facebook App Secret",
+                "type": "password"
+              }
+            }
+          },
+          "callbackURL": {
+            "title": "Callback URL",
+            "type": "uri"
+          }
+        },
+        "output": {
+          "strategy": {
+            "title": "Strategy",
+            "type": "object"
+          }
+        }
+      },
+      "require": {
+        "passport-facebook": "1.x.x"
+      },
+      "keywords": [
+        "facebook",
+        "strategy"
+      ],
+      "description": "Facebook Strategy",
+      "ns": "passport",
+      "name": "facebook",
+      "fn": "output = {\n  strategy: new passportFacebook.Strategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
+          },
+          "credentials": {
+            "title": "Credentials",
+            "type": "object",
+            "properties": {
+              "clientID": {
                 "title": "Client ID",
                 "type": "string"
               },
@@ -123,7 +168,7 @@
       "description": "Github Strategy",
       "ns": "passport",
       "name": "github",
-      "fn": "output = {\n  strategy: new passportGithub.Strategy.GithubStrategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
+      "fn": "output = {\n  strategy: new passportGithub.Strategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
       "ports": {
@@ -226,6 +271,51 @@
       "ns": "passport",
       "name": "session",
       "fn": "output = [input.app, 'use', input.passport.session()]\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
+          },
+          "credentials": {
+            "title": "Credentials",
+            "type": "object",
+            "properties": {
+              "consumerKey": {
+                "title": "Twitter Consumer Key",
+                "type": "string"
+              },
+              "consumerSecret": {
+                "title": "Twitter Consumer Secret",
+                "type": "password"
+              }
+            }
+          },
+          "callbackURL": {
+            "title": "Callback URL",
+            "type": "uri"
+          }
+        },
+        "output": {
+          "strategy": {
+            "title": "Strategy",
+            "type": "object"
+          }
+        }
+      },
+      "require": {
+        "passport-twitter": "1.x.x"
+      },
+      "keywords": [
+        "twitter",
+        "strategy"
+      ],
+      "description": "Twitter Strategy",
+      "ns": "passport",
+      "name": "twitter",
+      "fn": "output = {\n  strategy: new passportTwitter.Strategy( {\n    consumerKey: input.credentials.consumerKey,\n    consumerSecret: input.credentials.consumerSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
       "ports": {

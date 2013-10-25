@@ -1,5 +1,5 @@
 output = {
-  strategy: new passportGithub.Strategy( {
+  strategy: new passportFacebook.Strategy( {
     clientID: input.credentials.clientID,
     clientSecret: input.credentials.clientSecret,
     callbackURL: input.callbackURL
