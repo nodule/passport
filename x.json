@@ -16,6 +16,49 @@
           "title": "Passport",
           "passport": {
             "type": "function"
+          },
+          "strategy": {
+            "title": "Strategy",
+            "description": "Note: will use the .name property of the strategy",
+            "type": "object"
+          },
+          "options": {
+            "title": "Options",
+            "type": "object",
+            "properties": {
+              "failureRedirect": {
+                "title": "Failure Redirect",
+                "type": "string",
+                "description": "e.g. /login"
+              }
+            }
+          }
+        },
+        "output": {
+          "req": {
+            "title": "Request",
+            "type": "object"
+          },
+          "res": {
+            "title": "Response",
+            "type": "object"
+          }
+        }
+      },
+      "keywords": [
+        "passport"
+      ],
+      "description": "Passport Authenticate",
+      "ns": "passport",
+      "name": "authenticate",
+      "fn": "output = [passport, 'authenticate', input.strategy.name, input.options]\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "title": "Passport",
+          "passport": {
+            "type": "function"
           }
         },
         "output": {
