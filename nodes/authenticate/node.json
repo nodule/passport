@@ -3,6 +3,9 @@
   "ns": "passport",
   "description": "Passport Authenticate",
   "keywords": ["passport"],
+  "phrases": {
+    "active": "Authenticating to {{input.strategy.name}}"
+  },
   "ports": {
     "input": {
       "title": "Passport",

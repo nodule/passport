@@ -3,6 +3,9 @@
   "ns": "passport",
   "description": "Passport Use",
   "keywords": ["passport", "use"],
+  "phrases": {
+    "active": "Using passport strategy {{input.strategy.name}}"
+  },
   "ports": {
     "input": {
       "title": "Passport",

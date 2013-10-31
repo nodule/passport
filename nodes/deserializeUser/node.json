@@ -3,6 +3,9 @@
   "ns": "passport",
   "description": "Passport deserializeUser",
   "keywords": ["passport"],
+  "phrases": {
+    "active": "Deserializing user"
+  },
   "ports": {
     "input": {
       "title": "Passport",

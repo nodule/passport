@@ -45,6 +45,9 @@
           }
         }
       },
+      "phrases": {
+        "active": "Authenticating to {{input.strategy.name}}"
+      },
       "keywords": [
         "passport"
       ],
@@ -71,6 +74,9 @@
             "type": "function"
           }
         }
+      },
+      "phrases": {
+        "active": "Deserializing user"
       },
       "keywords": [
         "passport"
@@ -112,6 +118,9 @@
             "type": "object"
           }
         }
+      },
+      "phrases": {
+        "active": "Creating Facebook Strategy"
       },
       "require": {
         "passport-facebook": "1.x.x"
@@ -158,6 +167,9 @@
           }
         }
       },
+      "phrases": {
+        "active": "Creating Github Strategy"
+      },
       "require": {
         "passport-github": "0.x.x"
       },
@@ -189,6 +201,9 @@
           }
         }
       },
+      "phrases": {
+        "active": "Initializing passport"
+      },
       "depends": [
         "passport:initialize"
       ],
@@ -206,6 +221,9 @@
             "type": "function"
           }
         }
+      },
+      "phrases": {
+        "active": "Requiring passport"
       },
       "require": {
         "passport": "0.x.x"
@@ -237,6 +255,9 @@
           }
         }
       },
+      "phrases": {
+        "active": "Serialized user"
+      },
       "keywords": [
         "passport"
       ],
@@ -263,6 +284,9 @@
             "type": "object"
           }
         }
+      },
+      "phrases": {
+        "active": "Creating Passport session"
       },
       "depends": [
         "passport:session"
@@ -304,6 +328,9 @@
             "type": "object"
           }
         }
+      },
+      "phrases": {
+        "active": "Creating Twitter Strategy"
       },
       "require": {
         "passport-twitter": "1.x.x"
@@ -347,6 +374,9 @@
             "type": "function"
           }
         }
+      },
+      "phrases": {
+        "active": "Using passport strategy {{input.strategy.name}}"
       },
       "keywords": [
         "passport",

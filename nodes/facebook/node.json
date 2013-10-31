@@ -6,6 +6,9 @@
   "require": {
     "passport-facebook": "1.x.x"
   },
+  "phrases": {
+    "active": "Creating Facebook Strategy"
+  },
   "ports": {
     "input": {
       "title": "Passport",

@@ -5,6 +5,9 @@
   "depends": [
     "passport:session"
   ],
+  "phrases": {
+    "active": "Creating Passport session"
+  },
   "ports": {
     "input": {
       "title": "Passport",

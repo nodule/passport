@@ -6,6 +6,9 @@
   "require": {
     "passport": "0.x.x"
   },
+  "phrases": {
+    "active": "Requiring passport"
+  },
   "ports": {
     "input": {
     },

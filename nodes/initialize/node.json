@@ -5,6 +5,9 @@
   "depends": [
     "passport:initialize"
   ],
+  "phrases": {
+    "active": "Initializing passport"
+  },
   "ports": {
     "input": {
       "title": "Passport",

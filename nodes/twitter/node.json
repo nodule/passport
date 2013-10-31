@@ -6,6 +6,9 @@
   "require": {
     "passport-twitter": "1.x.x"
   },
+  "phrases": {
+    "active": "Creating Twitter Strategy"
+  },
   "ports": {
     "input": {
       "title": "Passport",

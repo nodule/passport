@@ -3,6 +3,9 @@
   "ns": "passport",
   "description": "Passport serializeUser",
   "keywords": ["passport"],
+  "phrases": {
+    "active": "Serialized user"
+  },
   "ports": {
     "input": {
       "title": "Passport",
