@@ -23,6 +23,7 @@
   },
   "chix": {
     "name": "passport",
+    "env": "server",
     "color": "rgb(27,50,223)"
   }
 }

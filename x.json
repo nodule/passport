@@ -54,6 +54,7 @@
       "description": "Passport Authenticate",
       "ns": "passport",
       "name": "authenticate",
+      "env": "server",
       "fn": "output = [passport, 'authenticate', input.strategy.name, input.options]\n"
     },
     {
@@ -84,6 +85,7 @@
       "description": "Passport deserializeUser",
       "ns": "passport",
       "name": "deserializeUser",
+      "env": "server",
       "fn": "output = [passport, 'deserializeUser']\n"
     },
     {
@@ -132,6 +134,7 @@
       "description": "Facebook Strategy",
       "ns": "passport",
       "name": "facebook",
+      "env": "server",
       "fn": "output = {\n  strategy: new passportFacebook.Strategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
@@ -180,6 +183,7 @@
       "description": "Github Strategy",
       "ns": "passport",
       "name": "github",
+      "env": "server",
       "fn": "output = {\n  strategy: new passportGithub.Strategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
@@ -210,6 +214,7 @@
       "description": "Passport Initialize",
       "ns": "passport",
       "name": "initialize",
+      "env": "server",
       "fn": "output = [input.app, 'use', input.passport.initialize()]\n"
     },
     {
@@ -234,6 +239,7 @@
       "description": "Require Passport",
       "ns": "passport",
       "name": "passport",
+      "env": "server",
       "fn": "output = { passport: passport }\n"
     },
     {
@@ -264,6 +270,7 @@
       "description": "Passport serializeUser",
       "ns": "passport",
       "name": "serializeUser",
+      "env": "server",
       "fn": "output = [passport, 'serializeUser']\n"
     },
     {
@@ -294,6 +301,7 @@
       "description": "Passport session",
       "ns": "passport",
       "name": "session",
+      "env": "server",
       "fn": "output = [input.app, 'use', input.passport.session()]\n"
     },
     {
@@ -342,6 +350,7 @@
       "description": "Twitter Strategy",
       "ns": "passport",
       "name": "twitter",
+      "env": "server",
       "fn": "output = {\n  strategy: new passportTwitter.Strategy( {\n    consumerKey: input.credentials.consumerKey,\n    consumerSecret: input.credentials.consumerSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
@@ -385,8 +394,10 @@
       "description": "Passport Use",
       "ns": "passport",
       "name": "use",
+      "env": "server",
       "fn": "output = [passport, 'use', input.strategy]\n"
     }
   ],
-  "twigs": []
+  "twigs": [],
+  "env": "server"
 }
