@@ -16,7 +16,11 @@
     "test": "chit -r"
   },
   "dependencies": {
-    "passport": "0.x.x"
+    "passport": "0.x.x",
+    "passport-local": "0.x.x",
+    "passport-facebook": "1.x.x",
+    "passport-twitter": "1.x.x",
+    "passport-github": "0.x.x"
   },
   "devDependencies": {
     "chit": "0.x.x"
