@@ -1,1 +1,3 @@
-output = { passport: passport }
+output = {
+  passport: passport
+}
