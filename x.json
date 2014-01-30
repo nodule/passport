@@ -15,15 +15,6 @@
   },
   "nodes": [
     {
-      "name": "authenticate",
-      "ns": "passport",
-      "description": "Passport Authenticate",
-      "keywords": [
-        "passport"
-      ],
-      "phrases": {
-        "active": "Authenticating to {{input.strategy.name}}"
-      },
       "ports": {
         "input": {
           "title": "Passport",
@@ -58,19 +49,19 @@
           }
         }
       },
+      "phrases": {
+        "active": "Authenticating to {{input.strategy.name}}"
+      },
+      "keywords": [
+        "passport"
+      ],
+      "description": "Passport Authenticate",
+      "ns": "passport",
+      "name": "authenticate",
       "env": "server",
       "fn": "output = [passport, 'authenticate', input.strategy.name, input.options]\n"
     },
     {
-      "name": "deserializeUser",
-      "ns": "passport",
-      "description": "Passport deserializeUser",
-      "keywords": [
-        "passport"
-      ],
-      "phrases": {
-        "active": "Deserializing user"
-      },
       "ports": {
         "input": {
           "title": "Passport",
@@ -89,23 +80,19 @@
           }
         }
       },
+      "phrases": {
+        "active": "Deserializing user"
+      },
+      "keywords": [
+        "passport"
+      ],
+      "description": "Passport deserializeUser",
+      "ns": "passport",
+      "name": "deserializeUser",
       "env": "server",
       "fn": "output = [passport, 'deserializeUser']\n"
     },
     {
-      "name": "facebook",
-      "ns": "passport",
-      "description": "Facebook Strategy",
-      "keywords": [
-        "facebook",
-        "strategy"
-      ],
-      "require": {
-        "passport-facebook": "1.x.x"
-      },
-      "phrases": {
-        "active": "Creating Facebook Strategy"
-      },
       "ports": {
         "input": {
           "title": "Passport",
@@ -138,23 +125,23 @@
           }
         }
       },
-      "env": "server",
-      "fn": "output = {\n  strategy: new passportFacebook.Strategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
-    },
-    {
-      "name": "github",
-      "ns": "passport",
-      "description": "Github Strategy",
+      "phrases": {
+        "active": "Creating Facebook Strategy"
+      },
+      "require": {
+        "passport-facebook": "1.x.x"
+      },
       "keywords": [
-        "github",
+        "facebook",
         "strategy"
       ],
-      "require": {
-        "passport-github": "0.x.x"
-      },
-      "phrases": {
-        "active": "Creating Github Strategy"
-      },
+      "description": "Facebook Strategy",
+      "ns": "passport",
+      "name": "facebook",
+      "env": "server",
+      "fn": "output = {\n  strategy: new passportFacebook.Strategy({\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
+    },
+    {
       "ports": {
         "input": {
           "title": "Passport",
@@ -187,19 +174,23 @@
           }
         }
       },
+      "phrases": {
+        "active": "Creating Github Strategy"
+      },
+      "require": {
+        "passport-github": "0.x.x"
+      },
+      "keywords": [
+        "github",
+        "strategy"
+      ],
+      "description": "Github Strategy",
+      "ns": "passport",
+      "name": "github",
       "env": "server",
-      "fn": "output = {\n  strategy: new passportGithub.Strategy( {\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
+      "fn": "output = {\n  strategy: new passportGithub.Strategy({\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
-      "name": "initialize",
-      "ns": "passport",
-      "description": "Passport Initialize",
-      "depends": [
-        "passport:initialize"
-      ],
-      "phrases": {
-        "active": "Initializing passport"
-      },
       "ports": {
         "input": {
           "title": "Passport",
@@ -218,22 +209,19 @@
           }
         }
       },
+      "phrases": {
+        "active": "Initializing passport"
+      },
+      "depends": [
+        "passport:initialize"
+      ],
+      "description": "Passport Initialize",
+      "ns": "passport",
+      "name": "initialize",
       "env": "server",
       "fn": "output = [input.app, 'use', input.passport.initialize()]\n"
     },
     {
-      "name": "passport",
-      "ns": "passport",
-      "description": "Require Passport",
-      "keywords": [
-        "passport"
-      ],
-      "require": {
-        "passport": "0.x.x"
-      },
-      "phrases": {
-        "active": "Requiring passport"
-      },
       "ports": {
         "input": {},
         "output": {
@@ -243,19 +231,22 @@
           }
         }
       },
-      "env": "server",
-      "fn": "output = { passport: passport }\n"
-    },
-    {
-      "name": "serializeUser",
-      "ns": "passport",
-      "description": "Passport serializeUser",
+      "phrases": {
+        "active": "Requiring passport"
+      },
+      "require": {
+        "passport": "0.x.x"
+      },
       "keywords": [
         "passport"
       ],
-      "phrases": {
-        "active": "Serialized user"
-      },
+      "description": "Require Passport",
+      "ns": "passport",
+      "name": "passport",
+      "env": "server",
+      "fn": "output = {\n  passport: passport\n}\n"
+    },
+    {
       "ports": {
         "input": {
           "title": "Passport",
@@ -274,19 +265,19 @@
           }
         }
       },
+      "phrases": {
+        "active": "Serialized user"
+      },
+      "keywords": [
+        "passport"
+      ],
+      "description": "Passport serializeUser",
+      "ns": "passport",
+      "name": "serializeUser",
       "env": "server",
       "fn": "output = [passport, 'serializeUser']\n"
     },
     {
-      "name": "session",
-      "ns": "passport",
-      "description": "Passport session",
-      "depends": [
-        "passport:session"
-      ],
-      "phrases": {
-        "active": "Creating Passport session"
-      },
       "ports": {
         "input": {
           "title": "Passport",
@@ -305,23 +296,19 @@
           }
         }
       },
+      "phrases": {
+        "active": "Creating Passport session"
+      },
+      "depends": [
+        "passport:session"
+      ],
+      "description": "Passport session",
+      "ns": "passport",
+      "name": "session",
       "env": "server",
       "fn": "output = [input.app, 'use', input.passport.session()]\n"
     },
     {
-      "name": "twitter",
-      "ns": "passport",
-      "description": "Twitter Strategy",
-      "keywords": [
-        "twitter",
-        "strategy"
-      ],
-      "require": {
-        "passport-twitter": "1.x.x"
-      },
-      "phrases": {
-        "active": "Creating Twitter Strategy"
-      },
       "ports": {
         "input": {
           "title": "Passport",
@@ -354,20 +341,23 @@
           }
         }
       },
+      "phrases": {
+        "active": "Creating Twitter Strategy"
+      },
+      "require": {
+        "passport-twitter": "1.x.x"
+      },
+      "keywords": [
+        "twitter",
+        "strategy"
+      ],
+      "description": "Twitter Strategy",
+      "ns": "passport",
+      "name": "twitter",
       "env": "server",
-      "fn": "output = {\n  strategy: new passportTwitter.Strategy( {\n    consumerKey: input.credentials.consumerKey,\n    consumerSecret: input.credentials.consumerSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
+      "fn": "output = {\n  strategy: new passportTwitter.Strategy({\n    consumerKey: input.credentials.consumerKey,\n    consumerSecret: input.credentials.consumerSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
-      "name": "use",
-      "ns": "passport",
-      "description": "Passport Use",
-      "keywords": [
-        "passport",
-        "use"
-      ],
-      "phrases": {
-        "active": "Using passport strategy {{input.strategy.name}}"
-      },
       "ports": {
         "input": {
           "title": "Passport",
@@ -398,6 +388,16 @@
           }
         }
       },
+      "phrases": {
+        "active": "Using passport strategy {{input.strategy.name}}"
+      },
+      "keywords": [
+        "passport",
+        "use"
+      ],
+      "description": "Passport Use",
+      "ns": "passport",
+      "name": "use",
       "env": "server",
       "fn": "output = [passport, 'use', input.strategy]\n"
     }
