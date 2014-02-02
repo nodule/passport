@@ -20,10 +20,6 @@
       }
     },
     "output": {
-      "event:complete": {
-        "title": "Complete",
-        "type": "object"
-      }
     }
   }
 }

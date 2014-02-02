@@ -202,12 +202,7 @@
             "type": "function"
           }
         },
-        "output": {
-          "event:complete": {
-            "title": "Complete",
-            "type": "object"
-          }
-        }
+        "output": {}
       },
       "phrases": {
         "active": "Initializing passport"
@@ -289,12 +284,7 @@
             "type": "function"
           }
         },
-        "output": {
-          "event:complete": {
-            "title": "Complete",
-            "type": "object"
-          }
-        }
+        "output": {}
       },
       "phrases": {
         "active": "Creating Passport session"
