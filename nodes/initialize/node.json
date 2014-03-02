@@ -10,8 +10,8 @@
   },
   "ports": {
     "input": {
-      "title": "Passport",
       "passport": {
+        "title": "Passport",
         "type": "function"
       },
       "app": {

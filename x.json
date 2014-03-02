@@ -17,8 +17,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           },
           "strategy": {
@@ -64,8 +64,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           }
         },
@@ -95,8 +95,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           },
           "credentials": {
@@ -144,8 +144,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           },
           "credentials": {
@@ -193,8 +193,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           },
           "app": {
@@ -244,8 +244,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           }
         },
@@ -275,8 +275,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           },
           "app": {
@@ -301,8 +301,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           },
           "credentials": {
@@ -350,8 +350,8 @@
     {
       "ports": {
         "input": {
-          "title": "Passport",
           "passport": {
+            "title": "Passport",
             "type": "function"
           },
           "strategy": {
