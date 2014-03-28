@@ -46,6 +46,18 @@
           "res": {
             "title": "Response",
             "type": "object"
+          },
+          "error": {
+            "title": "Error",
+            "type": "object"
+          },
+          "user": {
+            "title": "User",
+            "type": "object"
+          },
+          "info": {
+            "title": "User",
+            "type": "object"
           }
         }
       },
@@ -60,7 +72,7 @@
       "ns": "passport",
       "name": "authenticate",
       "env": "server",
-      "fn": "output = [passport, 'authenticate', input.strategy.name, input.options]\n"
+      "fn": "//output = [passport, 'authenticate', input.strategy.name, input.options]\noutput = function() {\n\n  passport.authenticate(\n    input.strategy.name,\n    input.options, function(err, user, info) {\n      cb({\n        error: err,\n        user: user,\n        info: info,\n        req: input.req,\n        res: input.res\n      });\n    }\n  )(input.req, input.res);\n\n};\n"
     },
     {
       "ports": {
