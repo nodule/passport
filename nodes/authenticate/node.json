@@ -1,6 +1,7 @@
 {
   "name": "authenticate",
   "ns": "passport",
+  "title": "Passport Authenticate",
   "description": "Passport Authenticate",
   "keywords": ["passport"],
   "phrases": {

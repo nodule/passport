@@ -1,6 +1,7 @@
 {
   "name": "passport",
   "ns": "passport",
+  "title": "Require Passport",
   "description": "Require Passport",
   "keywords": ["passport"],
   "require": {

@@ -1,6 +1,7 @@
 {
   "name": "serializeUser",
   "ns": "passport",
+  "title": "Passport serializeUser",
   "description": "Passport serializeUser",
   "keywords": ["passport"],
   "phrases": {

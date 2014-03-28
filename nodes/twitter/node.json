@@ -1,6 +1,7 @@
 {
   "name": "twitter",
   "ns": "passport",
+  "title": "Twitter Strategy",
   "description": "Twitter Strategy",
   "keywords": ["twitter", "strategy"],
   "require": {
@@ -32,7 +33,7 @@
       },
       "callbackURL": {
         "title": "Callback URL",
-        "type": "uri"
+        "type": "url"
       }
     },
     "output": {

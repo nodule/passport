@@ -1,6 +1,7 @@
 {
   "name": "deserializeUser",
   "ns": "passport",
+  "title": "Passport deserializeUser",
   "description": "Passport deserializeUser",
   "keywords": ["passport"],
   "phrases": {

@@ -1,6 +1,7 @@
 {
   "name": "github",
   "ns": "passport",
+  "title": "Github Strategy",
   "description": "Github Strategy",
   "keywords": ["github", "strategy"],
   "require": {
@@ -32,7 +33,7 @@
       },
       "callbackURL": {
         "title": "Callback URL",
-        "type": "uri"
+        "type": "url"
       }
     },
     "output": {

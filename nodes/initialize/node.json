@@ -1,6 +1,7 @@
 {
   "name": "initialize",
   "ns": "passport",
+  "title": "Passport Initialize",
   "description": "Passport Initialize",
   "depends": [
     "passport:initialize"

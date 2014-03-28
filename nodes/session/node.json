@@ -1,6 +1,7 @@
 {
   "name": "session",
   "ns": "passport",
+  "title": "Passport session",
   "description": "Passport session",
   "depends": [
     "passport:session"

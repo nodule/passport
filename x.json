@@ -56,6 +56,7 @@
         "passport"
       ],
       "description": "Passport Authenticate",
+      "title": "Passport Authenticate",
       "ns": "passport",
       "name": "authenticate",
       "env": "server",
@@ -87,6 +88,7 @@
         "passport"
       ],
       "description": "Passport deserializeUser",
+      "title": "Passport deserializeUser",
       "ns": "passport",
       "name": "deserializeUser",
       "env": "server",
@@ -115,7 +117,7 @@
           },
           "callbackURL": {
             "title": "Callback URL",
-            "type": "uri"
+            "type": "url"
           }
         },
         "output": {
@@ -136,6 +138,7 @@
         "strategy"
       ],
       "description": "Facebook Strategy",
+      "title": "Facebook Strategy",
       "ns": "passport",
       "name": "facebook",
       "env": "server",
@@ -164,7 +167,7 @@
           },
           "callbackURL": {
             "title": "Callback URL",
-            "type": "uri"
+            "type": "url"
           }
         },
         "output": {
@@ -185,6 +188,7 @@
         "strategy"
       ],
       "description": "Github Strategy",
+      "title": "Github Strategy",
       "ns": "passport",
       "name": "github",
       "env": "server",
@@ -211,6 +215,7 @@
         "passport:initialize"
       ],
       "description": "Passport Initialize",
+      "title": "Passport Initialize",
       "ns": "passport",
       "name": "initialize",
       "env": "server",
@@ -236,6 +241,7 @@
         "passport"
       ],
       "description": "Require Passport",
+      "title": "Require Passport",
       "ns": "passport",
       "name": "passport",
       "env": "server",
@@ -267,6 +273,7 @@
         "passport"
       ],
       "description": "Passport serializeUser",
+      "title": "Passport serializeUser",
       "ns": "passport",
       "name": "serializeUser",
       "env": "server",
@@ -293,6 +300,7 @@
         "passport:session"
       ],
       "description": "Passport session",
+      "title": "Passport session",
       "ns": "passport",
       "name": "session",
       "env": "server",
@@ -321,7 +329,7 @@
           },
           "callbackURL": {
             "title": "Callback URL",
-            "type": "uri"
+            "type": "url"
           }
         },
         "output": {
@@ -342,6 +350,7 @@
         "strategy"
       ],
       "description": "Twitter Strategy",
+      "title": "Twitter Strategy",
       "ns": "passport",
       "name": "twitter",
       "env": "server",
@@ -386,6 +395,7 @@
         "use"
       ],
       "description": "Passport Use",
+      "title": "Passport Use",
       "ns": "passport",
       "name": "use",
       "env": "server",
