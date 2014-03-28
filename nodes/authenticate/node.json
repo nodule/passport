@@ -9,14 +9,22 @@
   },
   "ports": {
     "input": {
+      "req": {
+        "title": "Request",
+        "type": "Stream"
+      },
+      "res": {
+        "title": "Response",
+        "type": "Stream"
+      },
       "passport": {
         "title": "Passport",
-        "type": "function"
+        "type": "Authenticator"
       },
       "strategy": {
          "title": "Strategy",
          "description": "Note: will use the .name property of the strategy",
-         "type": "object"
+         "type": "Strategy"
       },
       "options": {
         "title": "Options",
@@ -33,11 +41,11 @@
     "output": {
       "req": {
         "title": "Request",
-        "type": "object"
+        "type": "Stream"
       },
       "res": {
         "title": "Response",
-        "type": "object"
+        "type": "Stream"
       },
       "error": {
         "title": "Error",

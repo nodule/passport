@@ -11,11 +11,11 @@
     "input": {
       "passport": {
         "title": "Passport",
-        "type": "function"
+        "type": "Authenticator"
       },
       "strategy": {
         "title": "Strategy",
-        "type": "object"
+        "type": "Strategy"
       }
     },
     "output": {

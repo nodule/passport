@@ -13,11 +13,11 @@
     "input": {
       "passport": {
         "title": "Passport",
-        "type": "function"
+        "type": "Authenticator"
       },
       "app": {
         "title": "Express App",
-        "type": "function"
+        "type": "Server"
       }
     },
     "output": {

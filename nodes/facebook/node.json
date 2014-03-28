@@ -14,7 +14,7 @@
     "input": {
       "passport": {
         "title": "Passport",
-        "type": "function"
+        "type": "Authenticator"
       },
       "credentials": {
          "title": "Credentials",
@@ -39,7 +39,7 @@
     "output": {
       "strategy": {
         "title": "Strategy",
-        "type": "object"
+        "type": "Strategy"
       }
     }
   }

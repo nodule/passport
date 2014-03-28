@@ -17,14 +17,22 @@
     {
       "ports": {
         "input": {
+          "req": {
+            "title": "Request",
+            "type": "Stream"
+          },
+          "res": {
+            "title": "Response",
+            "type": "Stream"
+          },
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           },
           "strategy": {
             "title": "Strategy",
             "description": "Note: will use the .name property of the strategy",
-            "type": "object"
+            "type": "Strategy"
           },
           "options": {
             "title": "Options",
@@ -41,11 +49,11 @@
         "output": {
           "req": {
             "title": "Request",
-            "type": "object"
+            "type": "Stream"
           },
           "res": {
             "title": "Response",
-            "type": "object"
+            "type": "Stream"
           },
           "error": {
             "title": "Error",
@@ -79,7 +87,7 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           }
         },
         "output": {
@@ -111,7 +119,7 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           },
           "credentials": {
             "title": "Credentials",
@@ -135,7 +143,7 @@
         "output": {
           "strategy": {
             "title": "Strategy",
-            "type": "object"
+            "type": "Strategy"
           }
         }
       },
@@ -161,7 +169,7 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           },
           "credentials": {
             "title": "Credentials",
@@ -185,7 +193,7 @@
         "output": {
           "strategy": {
             "title": "Strategy",
-            "type": "object"
+            "type": "Strategy"
           }
         }
       },
@@ -211,11 +219,11 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           },
           "app": {
             "title": "Express App",
-            "type": "function"
+            "type": "Server"
           }
         },
         "output": {}
@@ -239,7 +247,7 @@
         "output": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           }
         }
       },
@@ -264,7 +272,7 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           }
         },
         "output": {
@@ -296,11 +304,11 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           },
           "app": {
             "title": "Express App",
-            "type": "function"
+            "type": "Server"
           }
         },
         "output": {}
@@ -323,7 +331,7 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           },
           "credentials": {
             "title": "Credentials",
@@ -347,7 +355,7 @@
         "output": {
           "strategy": {
             "title": "Strategy",
-            "type": "object"
+            "type": "Strategy"
           }
         }
       },
@@ -373,11 +381,11 @@
         "input": {
           "passport": {
             "title": "Passport",
-            "type": "function"
+            "type": "Authenticator"
           },
           "strategy": {
             "title": "Strategy",
-            "type": "object"
+            "type": "Strategy"
           }
         },
         "output": {

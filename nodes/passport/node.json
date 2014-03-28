@@ -16,7 +16,7 @@
     "output": {
       "passport": {
         "title": "Passport",
-        "type": "function"
+        "type": "Authenticator"
       }
     }
   }
