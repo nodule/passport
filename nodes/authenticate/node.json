@@ -48,7 +48,7 @@
         "type": "object"
       },
       "info": {
-        "title": "User",
+        "title": "Info",
         "type": "object"
       }
     }
