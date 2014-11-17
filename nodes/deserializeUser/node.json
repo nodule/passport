@@ -3,7 +3,9 @@
   "ns": "passport",
   "title": "Passport deserializeUser",
   "description": "Passport deserializeUser",
-  "keywords": ["passport"],
+  "keywords": [
+    "passport"
+  ],
   "phrases": {
     "active": "Deserializing user"
   },

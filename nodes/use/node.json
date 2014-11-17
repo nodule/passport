@@ -3,7 +3,10 @@
   "ns": "passport",
   "title": "Passport Use",
   "description": "Passport Use",
-  "keywords": ["passport", "use"],
+  "keywords": [
+    "passport",
+    "use"
+  ],
   "phrases": {
     "active": "Using passport strategy {{input.strategy.name}}"
   },

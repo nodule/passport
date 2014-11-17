@@ -3,7 +3,9 @@
   "ns": "passport",
   "title": "Passport Authenticate",
   "description": "Passport Authenticate",
-  "keywords": ["passport"],
+  "keywords": [
+    "passport"
+  ],
   "phrases": {
     "active": "Authenticating to {{input.strategy.name}}"
   },
@@ -22,9 +24,9 @@
         "type": "Authenticator"
       },
       "strategy": {
-         "title": "Strategy",
-         "description": "Note: will use the .name property of the strategy",
-         "type": "Strategy"
+        "title": "Strategy",
+        "description": "Note: will use the .name property of the strategy",
+        "type": "Strategy"
       },
       "options": {
         "title": "Options",

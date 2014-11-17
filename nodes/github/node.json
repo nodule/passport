@@ -3,10 +3,10 @@
   "ns": "passport",
   "title": "Github Strategy",
   "description": "Github Strategy",
-  "keywords": ["github", "strategy"],
-  "require": {
-    "passport-github": "0.x.x"
-  },
+  "keywords": [
+    "github",
+    "strategy"
+  ],
   "phrases": {
     "active": "Creating Github Strategy"
   },
@@ -17,19 +17,18 @@
         "type": "Authenticator"
       },
       "credentials": {
-         "title": "Credentials",
-         "type": "object",
-         "properties": {
-           "clientID": {
-             "title": "Client ID",
-             "type": "string"
-           },
-           "clientSecret": {
-             "title": "Client Secret",
-             "type": "password"
-           }
-         }
-
+        "title": "Credentials",
+        "type": "object",
+        "properties": {
+          "clientID": {
+            "title": "Client ID",
+            "type": "string"
+          },
+          "clientSecret": {
+            "title": "Client Secret",
+            "type": "password"
+          }
+        }
       },
       "callbackURL": {
         "title": "Callback URL",
@@ -41,6 +40,11 @@
         "title": "Strategy",
         "type": "Strategy"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "passport-github": "0.x.x"
     }
   }
 }

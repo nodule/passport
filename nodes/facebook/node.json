@@ -3,10 +3,10 @@
   "ns": "passport",
   "title": "Facebook Strategy",
   "description": "Facebook Strategy",
-  "keywords": ["facebook", "strategy"],
-  "require": {
-    "passport-facebook": "1.x.x"
-  },
+  "keywords": [
+    "facebook",
+    "strategy"
+  ],
   "phrases": {
     "active": "Creating Facebook Strategy"
   },
@@ -17,19 +17,18 @@
         "type": "Authenticator"
       },
       "credentials": {
-         "title": "Credentials",
-         "type": "object",
-         "properties": {
-           "clientID": {
-             "title": "Facebook App Id",
-             "type": "string"
-           },
-           "clientSecret": {
-             "title": "Facebook App Secret",
-             "type": "password"
-           }
-         }
-
+        "title": "Credentials",
+        "type": "object",
+        "properties": {
+          "clientID": {
+            "title": "Facebook App Id",
+            "type": "string"
+          },
+          "clientSecret": {
+            "title": "Facebook App Secret",
+            "type": "password"
+          }
+        }
       },
       "callbackURL": {
         "title": "Callback URL",
@@ -41,6 +40,11 @@
         "title": "Strategy",
         "type": "Strategy"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "passport-facebook": "1.x.x"
     }
   }
 }

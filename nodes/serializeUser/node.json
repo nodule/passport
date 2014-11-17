@@ -3,7 +3,9 @@
   "ns": "passport",
   "title": "Passport serializeUser",
   "description": "Passport serializeUser",
-  "keywords": ["passport"],
+  "keywords": [
+    "passport"
+  ],
   "phrases": {
     "active": "Serialized user"
   },

@@ -3,10 +3,10 @@
   "ns": "passport",
   "title": "Twitter Strategy",
   "description": "Twitter Strategy",
-  "keywords": ["twitter", "strategy"],
-  "require": {
-    "passport-twitter": "1.x.x"
-  },
+  "keywords": [
+    "twitter",
+    "strategy"
+  ],
   "phrases": {
     "active": "Creating Twitter Strategy"
   },
@@ -17,19 +17,18 @@
         "type": "Authenticator"
       },
       "credentials": {
-         "title": "Credentials",
-         "type": "object",
-         "properties": {
-           "consumerKey": {
-             "title": "Twitter Consumer Key",
-             "type": "string"
-           },
-           "consumerSecret": {
-             "title": "Twitter Consumer Secret",
-             "type": "password"
-           }
-         }
-
+        "title": "Credentials",
+        "type": "object",
+        "properties": {
+          "consumerKey": {
+            "title": "Twitter Consumer Key",
+            "type": "string"
+          },
+          "consumerSecret": {
+            "title": "Twitter Consumer Secret",
+            "type": "password"
+          }
+        }
       },
       "callbackURL": {
         "title": "Callback URL",
@@ -41,6 +40,11 @@
         "title": "Strategy",
         "type": "Strategy"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "passport-twitter": "1.x.x"
     }
   }
 }

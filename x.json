@@ -115,6 +115,11 @@
       "fn": "output = [passport, 'deserializeUser']\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "passport-facebook": "1.x.x"
+        }
+      },
       "ports": {
         "input": {
           "passport": {
@@ -150,9 +155,6 @@
       "phrases": {
         "active": "Creating Facebook Strategy"
       },
-      "require": {
-        "passport-facebook": "1.x.x"
-      },
       "keywords": [
         "facebook",
         "strategy"
@@ -165,6 +167,11 @@
       "fn": "output = {\n  strategy: new passportFacebook.Strategy({\n    clientID: input.credentials.clientID,\n    clientSecret: input.credentials.clientSecret,\n    callbackURL: input.callbackURL\n  })\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "passport-github": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "passport": {
@@ -199,9 +206,6 @@
       },
       "phrases": {
         "active": "Creating Github Strategy"
-      },
-      "require": {
-        "passport-github": "0.x.x"
       },
       "keywords": [
         "github",
@@ -242,6 +246,11 @@
       "fn": "output = [input.app, 'use', input.passport.initialize()]\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "passport": "0.x.x"
+        }
+      },
       "ports": {
         "input": {},
         "output": {
@@ -253,9 +262,6 @@
       },
       "phrases": {
         "active": "Requiring passport"
-      },
-      "require": {
-        "passport": "0.x.x"
       },
       "keywords": [
         "passport"
@@ -327,6 +333,11 @@
       "fn": "output = [input.app, 'use', input.passport.session()]\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "passport-twitter": "1.x.x"
+        }
+      },
       "ports": {
         "input": {
           "passport": {
@@ -361,9 +372,6 @@
       },
       "phrases": {
         "active": "Creating Twitter Strategy"
-      },
-      "require": {
-        "passport-twitter": "1.x.x"
       },
       "keywords": [
         "twitter",

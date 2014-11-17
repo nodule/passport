@@ -3,21 +3,24 @@
   "ns": "passport",
   "title": "Require Passport",
   "description": "Require Passport",
-  "keywords": ["passport"],
-  "require": {
-    "passport": "0.x.x"
-  },
+  "keywords": [
+    "passport"
+  ],
   "phrases": {
     "active": "Requiring passport"
   },
   "ports": {
-    "input": {
-    },
+    "input": {},
     "output": {
       "passport": {
         "title": "Passport",
         "type": "Authenticator"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "passport": "0.x.x"
     }
   }
 }
