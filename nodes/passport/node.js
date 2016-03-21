@@ -1,3 +1,1 @@
-output = {
-  passport: passport
-}
+output = {passport: $.create(passport)}

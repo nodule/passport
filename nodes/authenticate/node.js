@@ -1,17 +1,15 @@
 //output = [passport, 'authenticate', $.strategy.name, $.options]
 output = function() {
-
   passport.authenticate(
     $.strategy.name,
     $.options, function(err, user, info) {
       cb({
-        error: err,
-        user: user,
-        info: info,
-        req: $.req,
-        res: $.res
+        error: $.create(err),
+        user: $.create(user),
+        info: $.create(info),
+        req: $.get('req'),
+        res: $.get('res')
       });
     }
   )($.req, $.res);
-
 };
