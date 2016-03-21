@@ -1,7 +1,7 @@
 output = {
   strategy: new passportTwitter.Strategy({
-    consumerKey: input.credentials.consumerKey,
-    consumerSecret: input.credentials.consumerSecret,
-    callbackURL: input.callbackURL
+    consumerKey: $.credentials.consumerKey,
+    consumerSecret: $.credentials.consumerSecret,
+    callbackURL: $.callbackURL
   })
 };

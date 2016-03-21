@@ -1,1 +1,1 @@
-output = [passport, 'use', input.strategy]
+output = [passport, 'use', $.strategy]

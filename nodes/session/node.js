@@ -1,1 +1,1 @@
-output = [input.app, 'use', input.passport.session()]
+output = [$.app, 'use', $.passport.session()]

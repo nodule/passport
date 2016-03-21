@@ -1,1 +1,1 @@
-output = [input.app, 'use', input.passport.initialize()]
+output = [$.app, 'use', $.passport.initialize()]
